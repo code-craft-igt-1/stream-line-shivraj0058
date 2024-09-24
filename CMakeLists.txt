@@ -24,8 +24,14 @@ add_executable(
   ${SOURCES}
 )
 
+file(GLOB TEST "test/*.cpp")
+add_executable(
+    test-sender
+  ${TEST}
+)
+
 target_link_libraries(
-    test-monitor
+    test-sender
   GTest::gtest_main
 )
 
