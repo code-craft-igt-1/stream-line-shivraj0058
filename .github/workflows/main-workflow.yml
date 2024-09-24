@@ -28,7 +28,7 @@ jobs:
     - name: run
       run: build/sender
       
-    - name: run
+    - name: test
       run: build/test-sender
 
     - name: collect coverage
