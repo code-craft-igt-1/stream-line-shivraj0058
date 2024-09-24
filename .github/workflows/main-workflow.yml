@@ -28,6 +28,9 @@ jobs:
     - name: run
       run: build/test-sender
 
+    - name: run
+      run: build/sender
+
     - name: collect coverage
       run: gcovr --gcov-exclude=".*test.*" -r . --html --html-details -o coverage.html --print-summary
 
