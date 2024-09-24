@@ -18,11 +18,12 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-file(GLOB SOURCES "*.cpp")
+file(GLOB SOURCES "src/*.cpp")
 add_executable(
-    test-monitor
+    sender
   ${SOURCES}
 )
+
 target_link_libraries(
     test-monitor
   GTest::gtest_main
