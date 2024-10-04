@@ -7,7 +7,7 @@ void sendVitalValues() {
     for ( int i = 1; i <= 50; i++ ) {
         std::cout <<
         obj.generateRandomSensorValue(TEMPERATURE_LOWER_LIMIT, TEMPERATURE_UPPER_LIMIT) << "," <<
-        obj.generateRandomSensorValue(PULSERATE_LOWER_LIMIT, PULSERATE_LOWER_LIMIT) << "," <<
+        obj.generateRandomSensorValue(PULSERATE_LOWER_LIMIT, PULSERATE_UPPER_LIMIT) << "," <<
         obj.generateRandomSensorValue(SPO2_LOWER_LIMIT, SPO2_UPPER_LIMIT) << std::endl;
     }
 }
