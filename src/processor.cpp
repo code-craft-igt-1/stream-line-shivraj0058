@@ -43,14 +43,14 @@ void MaximumAndMinimumVitalValues(std::vector<double> vitalValues) {
         if (vitalValues[i + 2] > maxSpo2) maxSpo2 = vitalValues[i + 2];
         if (vitalValues[i + 2] < minSpo2) minSpo2 = vitalValues[i + 2];
     }
-    std::cout << "Maximum and Minimum values of Temperature, Pulse Rate and Spo2 are: " << std::endl;
+    std::cout << "Maximum and Minimum values of Temperature,"
+              << "Pulse Rate and Spo2 are: " << std::endl;
     std::cout << "Temperature: " << maxTemperature << " and " << minTemperature << std::endl;
     std::cout << "Pulse Rate: " << maxPulseRate << " and " << minPulseRate << std::endl;
     std::cout << "Spo2: " << maxSpo2 << " and " << minSpo2 << std::endl;
 }
 
-void simpleMovingAverage(std::vector<double> vitalValues)
-{
+void simpleMovingAverage(std::vector<double> vitalValues) {
     double sumTemperature = 0, sumPulseRate = 0, sumSpo2 = 0;
     for (int i = 0; i < vitalValues.size(); i += 3) {
         sumTemperature += vitalValues[i];
